@@ -11,4 +11,4 @@ spec:
   - name: ubuntu
     image: ubuntu:22.04
     ports:
-    - containerPort: 81
+    - containerPort: 80
