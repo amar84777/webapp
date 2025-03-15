@@ -1,0 +1,5 @@
+name:login
+replicas:1
+app:login
+image:amar8477/food
+container port: 80
