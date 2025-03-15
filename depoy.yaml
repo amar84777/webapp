@@ -1,0 +1,25 @@
+#deployment
+apiVersion=apps/v1
+kind=deployment
+metadata:
+ name:_______
+spec:
+ replicas:
+ selector:
+  matchlabels:
+   app:
+ template:
+   metadata:
+    labels:
+     app:
+   spec:
+    containers:
+    - name: 
+      image: 
+      ports:
+       -containerPort: 
+
+
+   
+    
+      
