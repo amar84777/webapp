@@ -1,0 +1,10 @@
+apiversion:v1
+kind:pod
+metadata:
+  name:kiran
+spec:
+  containers:
+  - name: kiran
+    image: nginx
+    ports:
+    - containerPort: 80
