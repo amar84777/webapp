@@ -29,3 +29,25 @@ resource "aws_subnet" "Amr.db" {
     Name = "dbsubnet"
   }
 }
+# Internet Gateway
+resource "aws_internet_gateway"Amar-igv" {
+  vpc_id = aws_vpc.Amar-lms.id
+
+  tags = {
+    Name = "lms-internet-gateway"
+  }
+}
+# Public Route Table
+resource "aws_route_table" "Amar-pub-rt" {
+  vpc_id = aws_vpc.Amar-lms.id
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.lms-igw.id
+  }
+
+  tags = {
+    Name = "Amar-public-rt"
+  }
+}
+
