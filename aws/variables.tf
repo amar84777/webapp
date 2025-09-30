@@ -5,5 +5,5 @@ variable "aws_access_key" {
 }
 variable "aws_secert_key"{
     type = string
-    default = "Input the aws_secert_key"
+    default = "Input the aws_secert_keys"
 }
